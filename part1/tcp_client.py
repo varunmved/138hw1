@@ -2,12 +2,13 @@
 Varun Ved
 Justin Mendiguarin
 
-client.py
+tcp_client.py
 
 Client part of the code for server-client
 '''
 
 import socket
+import sys
 
 HOST = '127.0.0.1'
 PORT = 6969
@@ -43,7 +44,7 @@ closes the socket
 '''
 def socket_close(c):
     c.close()
-    exit()
+    sys.exit('Closing Client')
 
 '''
 main running file, expects socket
@@ -52,6 +53,7 @@ main running file, expects socket
 def run(c):
     message = raw_input('Enter the message you want to send ')
     if message == 'exit':
+        socket_send(message, c)
         socket_close(c)
     else:
         socket_send(message, c)

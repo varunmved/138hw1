@@ -2,9 +2,9 @@
 Varun Ved
 Justin Mendiguarin
 
-server.py
+tcp_server.py
 
-simple client server chat
+Server part of simple client server chat
 '''
 
 import socket

@@ -11,7 +11,7 @@ import socket
 import sys
 
 HOST = '127.0.0.1'
-PORT = 6969
+PORT = 7777
 
 '''
 socket_init()
@@ -57,7 +57,6 @@ def run(c):
     else:
         socket_send(message, c)
         socket_recieve(c)
-
 '''
 main driver
 '''
